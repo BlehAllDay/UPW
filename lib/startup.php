@@ -54,7 +54,8 @@ spl_autoload_register
 define("BROWSER_URL", new URL($_SERVER["REQUEST_URI"]));
 
 // MySQL database connection.
-$mysqli = new \mysqli("localhost", "root", "babaloo", "manilow");
+// Use your own info.
+$mysqli = new \mysqli("localhost", "root", "artanix_is_butt", "");
 if($mysqli->connect_error)
     die("Connect Error ({$mysqli->connect_errno}){$mysqli->connect_error}!");
 
